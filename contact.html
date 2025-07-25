@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secret Aura - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+</head>
+<body class="contact-page">
+
+  <nav class="navbar">
+    <button id="theme-toggle" class="theme-toggle">
+      <i class='bx bx-moon'></i>
+    </button>
+    <a href="index.html">
+        <h1 class="logo">Aura++</h1>
+        </a>
+    <ul class="nav-link">
+            <li ><a href="index.html">Home</a></li>
+            <li ><a href="about.html">About Us</a></li>
+            <li ><a href="collection.html">Collections</a></li>
+            <li><a href="customer.html">Customers</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    <div class="nav-icons">
+      <div class="header-icon">
+        <i class='bx bx-cart-alt'></i>
+        <i class='bx bx-search' id="search-icon"></i>
+        <div class="search-box">
+          <input type="search" placeholder="Search here..." />
+        </div>
+      </div>
+    </div>
+    <i class="bx bx-menu menu-btn"></i>
+  </nav>
+
+  <div class="cart-container">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+  </div>
+
+  <div class="contact-form-container">
+ <div class="wrapper-contact">
+  <h2>Contact form</h2>
+<form id="contact-form">
+    <div class="input-box">
+      <span class="icon"><i class='bx bx-envelope'></i></span>
+      <input type="email" placeholder="Enter your email" required>
+    </div>
+    <div class="input-box">
+      <span class="icon"><i class='bx bx-user'></i></span>
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+    <div class="input-box">
+      <span class="icon"><i class='bx bx-message-square-detail'></i></span>
+      <textarea id="message" placeholder="Your message" rows="4" required style="padding-left: 40px; border-radius: 5px; border: 1px solid white; background: transparent; color: black; resize: vertical;"></textarea>
+    </div>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+  <div id="success-message" style="display:none; color: green; margin-top: 10px; text-align: center; font-weight: bold;">Message sent successfully</div>
+</div>
+</div>
+    
+  <section class="footer" id="contact">
+  <div class="footer-box">
+    <h2>SECRET AURA</h2>
+   <div class="social">
+  <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+  <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+  <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+  <a href="https://www.tiktok.com" target="_blank"><i class='bx bxl-tiktok'></i></a>
+</div>
+
+  </div>
+
+  <div class="footer-box">
+    <h2>Support</h2>
+    <li><a href="collection.html">Product</a></li>
+    <li><a href="contact.html">Help & Support</a></li>
+    <li><a href="#">Return Policy</a></li>
+    <li><a href="#">Terms of Use</a></li>
+    
+  </div>
+
+  <div class="footer-box">
+    <h2>Contact Us</h2>
+    <ul>
+      <li>Email: <a href="mailto:secretaura@gmail.com">secretaura@gmail.com</a></li>
+      <li>Phone: <a href="tel:+9779865374519">+977 9865374519</a></li>
+      <li>Address: Kathmandu, Nepal</li>
+      <li><a href="contact.html">Contact Form</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer style="background-color:rgb(61, 2, 2)">
+  <p>&copy; 2025 Secret Aura.All rights reserved.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

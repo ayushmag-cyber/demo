@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Aura</title>
+    <link rel="stylesheet" href="./style.css">
+    <!--icons-->
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">Aura++</h1>
+        <ul class="navlink">
+            <li ><a href="#home">Home</a></li>
+            <li ><a href="#about">About Us</a></li>
+            <li ><a href="#collections">Collections</a></li>
+            <li ><a href="#reviews">Reviews</a></li>
+            <li class="nav-ctn"><a href="#">Contact</a></li>
+        </ul>
+        <img src="./images/menu.png" alt="Menu Button" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h1>THE SECRET AURA</h1>
+            <h2>BY AG</h2>
+            <div class="line"></div>
+            <h3>Your signature in every breathe.</h3>
+            <a href="#" class="ctn">Shown More</a>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.jpeg" alt="" >
+        </div>
+        <div class="about-text">
+            <h1>About Us</h1>
+            <p>Welcome to Secret Aura, where every scent tells a story.</p>
+            <p>We are a small yet passionate perfume brand dedicated to creating limited edition fragrances that capture emotions, memories, and bold elegance. Each perfume in our collection is carefully crafted to bring out your unique aura and leave a lasting impression wherever you go.Our journey began with a vision to make scents that are not mass-produced but are pure and rare. We believe a fragrance should be your secret signature, adding confidence and charm to your everyday life.We use quality ingredints and elegant bottle designs to ensure our perfumes are not just scents but artistic creations.</p>
+            <p>With only a few bottles of each scent released, our collection remains exclusive for thos who seek something different and unforgettable.</p>
+            <p>Thank you for being a part of our aromatic journey.</p>
+            <p>Discover your secret aura today.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="scents">
+        <div class="title">
+            <h1>Most Demanded Scents</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./images/blood.jpeg" alt="Blood Rose Perfume">
+                <h4>BLOOD ROSE: The Seduction meets Power.</h4>
+                <p>A bold, rich scent that makes you unforgettable.</p>
+            </div>
+            <div class="col">
+                <img src="./images/dark.jpeg" alt="Dark Desire Perfume">
+                <h4>DARK DESIRE: Mystery, Power and Desire.</h4>
+                <p>The passion meets mystery in every spray.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlink = document.querySelector('.nav-link');
+
+        menuBtn.addEventListener('click',()=>{
+            navlink.classList.toggle('mobile-menu');
+        });
+
+    </script>
+  <!--link to js-->
+   <script src="app.js"></script>
+</body>
+</html>

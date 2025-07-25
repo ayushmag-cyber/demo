@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Aura</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+
+    <!--icons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <button id="theme-toggle" class="theme-toggle">
+            <i class='bx bx-moon'  ></i> 
+        </button>
+        <a href="index.html">
+        <h1 class="logo">Aura++</h1>
+        </a>
+        <ul class="nav-link">
+            <li ><a href="index.html">Home</a></li>
+            <li ><a href="about.html">About Us</a></li>
+            <li ><a href="collection.html">Collections</a></li>
+            <li><a href="customer.html">Customers</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+          <div class="nav-icons">
+          <div class="header-icon">
+          <i class='bx bx-cart-alt'></i>
+          <i class='bx bx-search' id="search-icon"></i>
+        <div class="search-box">
+            <input type="search" placeholder="Search here...">
+        </div>
+</div>
+</div>
+           <!--cart-->
+      <i class="bx bx-menu menu-btn"></i>
+    </nav>
+    <div class="cart-container">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+  </div>
+    <header id="header">
+
+    <div class="header-content-container">
+    <div class="header-text" style="text-align:center">
+        <h1>Welcome to </h1>
+         <h1>SECRET AURA</h1>
+        <h2>By AG</h2>
+        <div class="line"></div>
+        <h3>Your signature in every breath.</h3>
+        <a href="mostDemandedCollection.html" class="btn">Shop Now</a>
+    </div>
+    <div class="header-image-box">
+        <img src="images/homeside.jpg" alt="Featured Perfume" />
+    </div>
+</div>
+
+        </header>
+
+   <!--about ko section-->
+    <section class="about" id="about">
+    <div class="about-img">
+        <img src="images/aboutlight.jpeg" alt="About Secret Aura" >
+    </div>
+    <div class="about-text">
+        <h1>About Us</h1>
+        <div class="line"></div>
+        <p>At Secret Aura, every scent tells a story , your story. We are a passionate perfume brand dedicated to crafting limited edition fragrances that capture your emotions and bold elegance.</p>
+        <a href="about.html" class="btn">Learn More</a>
+    </div>
+</section>
+
+     <!--demanded-->
+    <section class="collections" id="collections">
+        <div class="title">
+            <h1>Most Demanded Collections</h1>
+            <div class="line"></div>
+        </div>
+         <div class="collection-container">
+
+         <div class="box">
+                <img src="./images/blood.jpeg" alt="Blood Rose Perfume">
+                <h4>BLOOD ROSE: The Seduction meets Power.</h4>
+                <p>A bold, rich scent that makes you unforgettable.</p>
+                <div class="content">
+                    <span>$50</span>
+                            <button class="btn add-to-cart" data-name="BLOOD ROSE" data-price="$50">Add to cart</button>
+             </div>
+            </div>
+            <div class="box">
+                <img src="./images/dark.jpeg" alt="Dark Desire Perfume">
+                <h4>DARK DESIRE: Mystery, Power and Desire.</h4>
+                <p>The passion meets mystery in every spray.</p>
+                <div class="content">
+                <span>$43</span>
+                            <button class="btn add-to-cart" data-name="DARK DESIRE" data-price="$46">Add to cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/tempt.jpeg" alt="Temptation Perfume">
+                <h4>TEMPTATION: Irresistible, Bold, Alluring.</h4>
+                <p>Desire and enchantment blend in every spray.</p>
+                <div class="content">
+                     <span>$46</span>
+                            <button class="btn add-to-cart" data-name="TEMPTATION" data-price="$46">Add to cart</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--collections-->
+
+     <section class="collections" id="collections">
+                <div class="title">
+                    <h1>Our Collections</h1>
+                    <div class="line"></div>
+                </div>
+                <div class="collection-container">
+                     <div class="box">
+                        <img src="./images/sweet.jpeg" alt="">
+                        <h2>Sweet Poison</h2>
+                        <div class="content">
+                            <span>$39</span>
+                            <button class="btn add-to-cart" data-name="Sweet Poison" data-price="$39">Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="./images/obsession.jpeg" alt="">
+                        <h2>Secret Obsession</h2>
+                        <div class="content">
+                            <span>$43</span>
+                    <button class="btn add-to-cart" data-name="Secret Obsession" data-price="$43">Add to cart</button>
+                        </div>
+                    </div>
+                     <div class="box">
+                        <img src="./images/moon.jpeg" alt="">
+                        <h2>Moonlight</h2>
+                        <div class="content">
+                            <span>$32</span>
+                      <button class="btn add-to-cart" data-name="Moonlight" data-price="$21">Add to cart</button>
+                        </div>
+                    </div>
+
+                </div>
+                     <div style="text-align: center; margin-top: 20px;">
+                      <a href="collection.html" class="btn">View More</a>
+                     </div>
+            </section>
+
+            <!--customers-->
+            <section class="customers" id="customers">
+  <div class="title">
+            <h1>Our Customer's Review</h1>
+           <div class="line"></div>
+            </div>
+            <div class="customers-container">
+                <div class="box">
+                <img src="images/customer1.jpeg">
+                    <h1>Aashrita</h1>
+                    <div class="stars">
+                        <i class='bx bxs-star' ></i> 
+                        <i class='bx bxs-star' ></i> 
+                        <i class='bx bxs-star' ></i> 
+                        <i class='bx bxs-star' ></i> 
+                        <i class='bx bxs-star-half' ></i> 
+                    </div>
+                    <p>Loved it from the first spray! It's fresh, elegant, and just what I was looking for.</p>            </div>
+
+              <div class="box">
+                    <img src="images/customer4.jpeg">
+                    <h1>Aarogya Gag</h1>
+                    <div class="stars">
+                        <i class='bx bxs-star' ></i> 
+                        <i class='bx bxs-star' ></i> 
+                        <i class='bx bxs-star' ></i> 
+                        <i class='bx bxs-star-half' ></i> 
+                    </div>
+                    <p>Made her so happy.The perfume is simple, sweet, and smells perfect on her. Worth every rupee.</p>
+                </div>
+
+                <div class="box">
+                    <img src="images/customer2.jpg">
+                    <h1>Pramisha</h1>
+                    <div class="stars">
+                        <i class='bx bxs-star' ></i> 
+                        <i class='bx bxs-star' ></i> 
+                        <i class='bx bxs-star' ></i> 
+                        <i class='bx bxs-star-half' ></i> 
+                    </div>
+                    <p>He got me this perfume and I'm obsessed! It's soft, sweet, and totally me. I wear it every day and it feels like love in a bottle. </p>
+                </div>
+                </div>
+                <div style="text-align: center; margin-top: 20px;">
+                      <a href="customer.html" class="btn">View More</a>
+                     </div>
+                </section>
+
+                <!--contact-->
+                <section class="footer" id="contact">
+  <div class="footer-box">
+    <h2>SECRET AURA</h2>
+    <div class="social">
+  <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+  <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+  <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+  <a href="https://www.tiktok.com" target="_blank"><i class='bx bxl-tiktok'></i></a>
+</div>
+  </div>
+
+  <div class="footer-box">
+    <h2>Support</h2>
+    <li><a href="collection.html">Product</a></li>
+    <li><a href="#">Help & Support</a></li>
+    <li><a href="#">Return Policy</a></li>
+    <li><a href="#">Terms of Use</a></li>
+  </div>
+
+  <div class="footer-box">
+    <h2>Contact Us</h2>
+    <ul>
+      <li>Email: <a href="mailto:secretaura@gmail.com">secretaura@gmail.com</a></li>
+      <li>Phone: <a href="tel:+9779865374519">+977 9865374519</a></li>
+      <li>Address: Kathmandu, Nepal</li>
+      <li><a href="contact.html">Contact Form</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer style="background-color:rgb(61, 2, 2)">
+  <p>&copy; 2025 Secret Aura.All rights reserved.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
