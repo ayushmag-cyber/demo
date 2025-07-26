@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 a {
-    text-decoration: none;afd
+    text-decoration: none;
 }
 a:hover{
     color: maroon;
@@ -112,12 +112,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     width: 100%;
     padding: 0 5%;
     height: 100%;
 }
 .header-content-container {
+    flex-wrap: nowrap;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,44 +129,51 @@ header{
 
 .header-text {
     flex: 1;
-    /* margin-right: 30REM; */
-    
+    margin-right:30px;
     font-size: 30px;
     color: #dea513;
 }
+.header-text h1 {
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #e8c65f, #ffa600);   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+.header-text h3 {
+    font-size: 3min;
+    font-weight: 400;
+    background: linear-gradient(90deg, #fba608, rgb(241, 222, 153));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 10px;
+}
+
 
 .header-image-box {
-    /* flex: 1; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* margin-left: 17.5rem; */
+     flex: 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-left: 17.5rem; 
+     padding-top: 110px;
+     padding-bottom: 80px;
 }
 
 .header-image-box img {
-    width: 500px;
-    /* height: 700px; */
+    width: 90%;
+    height: auto; 
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    padding-top: 40px;
+    display: block;
 }
 img{
     width: 600px;
     height: 700px;
-}
-.header-content {
-    margin-bottom: 150px;
-    color: #dea513;
-    text-align: center;
-    padding-right: 20px;
-    flex: 1;
-}
-.header-content h3 {
-font-size: 4vmin;
-margin-bottom: 20px;
-}
-.header-content p {
-    color: white;
 }
 .line {
     width: 150px;
@@ -174,17 +181,6 @@ margin-bottom: 20px;
     background: wheat;
     margin: 10px auto;
     border-radius: 5px;
-}
-.header-content h1 {
-    font-size: 7vmin;
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-.header-content h2 {
-    font-size: 4vmin;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-style: italic;
 }
 .contact-form-container {
   display: flex;
@@ -221,7 +217,7 @@ body.contact-page {
     border-radius: 12px;
     color: #0e0c0c;
     background-color: rgb(233, 233, 192);
-    box-shadow: 0 0 10px rgba(245, 240, 240, 0.908);
+    box-shadow: 0 0 10px rgba(12, 12, 12, 0.908);
     z-index: 999;
 }
 
@@ -248,6 +244,10 @@ body.contact-page {
     height: 50px;
     margin-bottom: 20px;
     color: #101010;
+    padding-left: 40px; 
+    background-color: transparent; 
+    color: rgb(6, 6, 6); 
+    resize: vertical;
 
 }
 .wrapper-login .btn , .wrapper-contact .btn{
@@ -488,10 +488,8 @@ a.btn:hover {
 padding: 0.1rem;
 color: black;
 background-color: #dea513;
-
 border: 4px;
 font-weight: 500;
-
 }
 
 .customers-container{
@@ -529,12 +527,23 @@ border-radius: 100%;
     font-size: 14px;
     color: rgb(0, 0, 0);
 }
+.author {
+  font-style: italic;
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  color: #f4bc07;
+}
 
 .logo {
     color: #dea513;
     position: relative;
     font-size: 2rem;
+     background: linear-gradient(90deg, #f3ca94, #fdb704);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
+
 
 .theme-toggle{
     background: none;
@@ -577,11 +586,11 @@ body.light .wrapper-login input{
 body.light .wrapper-contact{
     background-color: rgb(233, 233, 192);
     box-shadow: 0 0 10px rgba(245, 240, 240, 0.908);
-    color: black;
+    color: rgb(8, 8, 8);
 }
 body.light .wrapper-contact input{
-    color: #121212;
-    border: 1px solid #0f0f0f;
+    color: #050505;
+    border: 1px solid #040404;
 }
 
 body.light .header-content h1,
@@ -626,6 +635,12 @@ body.light .collection-container .box {
 }
 body.light .customers-container .box {
     background-color: #e2f0fb;
+}
+body.light .author {
+  font-style: italic;
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  color: #f4bc07;
 }
 
 .footer {
